@@ -1,0 +1,59 @@
+import org.w3c.dom.ls.LSInput;
+
+import java.util.Scanner;
+
+public class prog2 {
+    public static void main(String[] args) {
+        //integers
+        byte a = 0;
+        short b = 1;
+        int c = 2;
+        long d = 676;
+
+        float e = 1.5f;
+        double f = 1.6;
+
+        char symbolValue ='a';
+        boolean flag = false;
+        System.out.println(c);
+
+        System.out.println(getNumber(1,2,3,4));
+        System.out.println(test(5, 5));
+        PosNeg(0);
+        System.out.println(testNeg(0));
+        helloName("Виталий");
+    }
+    public static double getNumber (double a, double b, double c ,double d){
+        double e = a * (b + (c / d));
+        return e;
+    }
+    public static boolean test (int a, int b){
+        int c = a + b;
+        boolean numFlag = false;
+        if ((c >= 10) && (c <= 20)){
+            numFlag = true;
+
+        }
+        return numFlag;
+    }
+    public static void PosNeg (int a){
+        if (a < 0) {
+            System.out.println("Число отрицаиельное");
+
+        } else System.out.println("Число положительное");
+
+    }
+    public static boolean testNeg(int a){
+        boolean negFlag= true;
+        if( a >=0){
+            negFlag = false;
+        }
+        return negFlag;
+    }
+
+    public static void helloName(String a){
+
+        System.out.println("Hello "+ a);
+    }
+
+}
